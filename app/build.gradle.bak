@@ -1,0 +1,188 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+
+    //解决点9报错的问题
+//    aaptOptions.cruncherEnabled = false
+//    aaptOptions.useNewCruncher = false 记录版本号 63
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    defaultConfig {
+        applicationId "com.example.lxx.myalipay"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 67
+        versionName "0.6.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        renderscriptSupportModeEnabled true    // Enable RS support
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+    dexOptions {
+        jumboMode = true
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+
+    //解决api 低的问题
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //design 样式
+    implementation 'com.android.support:design:27.1.1'
+
+    //轮播图
+    implementation 'com.youth.banner:banner:1.4.9'
+
+    //最新版本
+
+    //卡片
+    implementation 'com.android.support:cardview-v7:27.1.1'
+
+    //单Activity框架
+    implementation 'me.yokeyword:fragmentation:1.3.2'
+    implementation 'me.yokeyword:fragmentation-swipeback:1.1.8'
+
+    //butterknife 黄油刀
+    implementation 'com.jakewharton:butterknife:9.0.0-rc1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
+
+    //沉浸式状态栏
+    implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+
+    //recycleView 帮助类框架
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.41'
+
+    //解析类
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //图片加载类
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+
+    //做请求头 请求参数时使用的，详情在github中使用
+    implementation 'com.readystatesoftware.chuck:library:1.0.4'
+
+    //网络请求结合rxjava和okhttp 适合上传下载，各种请求
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.lzy.widget:ninegridview:0.2.1'
+
+    //    implementation 'io.reactivex:rxjava:1.1.5'
+
+    //    implementation 'io.reactivex:rxandroid:1.2.0+'
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.lzy.net:okrx2:2.0.2'
+    implementation 'com.lzy.net:okserver:2.0.5'
+
+    //图片选择器
+    implementation 'com.lzy.widget:view-core:0.2.3'
+    implementation 'com.lzy.widget:imagepicker:0.6.1'
+
+    //指定版本
+
+    //Log
+    implementation 'com.orhanobut:logger:2.1.1+'
+
+    //字体图标库集成与封装
+    implementation 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2'
+    implementation 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'
+
+    //二维码
+    implementation 'com.google.zxing:core:3.2.1'
+
+    //连接脚本
+    implementation 'org.jsoup:jsoup:1.11.3'
+
+    //搜索框
+    implementation project(':search_view')
+
+    //1.1.0 API改动过大，老用户升级需谨慎
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+
+    //没有使用特殊Header，可以不加这行
+
+    //个人中心头像
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
+
+    //一个实时动态模糊库
+    implementation 'com.github.mmin18:realtimeblurview:1.1.0'
+
+    //裁剪类
+    implementation 'com.yalantis:ucrop:2.2.0'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+
+    //进度条
+    implementation 'com.kaopiz:kprogresshud:1.0.1'
+
+    //发送消息，用于解偶
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //仿小米的日历
+    implementation project(':ncalendar')
+    implementation 'joda-time:joda-time:2.9.9'
+
+    //底部弹框
+    implementation 'com.contrarywind:Android-PickerView:4.1.3'
+
+    //微信聊天用客户服务里面
+    implementation 'com.jude:easyrecyclerview:4.2.3'
+
+    //视频完整版引入
+    implementation 'com.shuyu:GSYVideoPlayer:5.0.0-beta'
+
+    //底部导航栏
+    implementation 'com.ashokvarma.android:bottom-navigation-bar:1.3.1'
+
+    //自定义头部代替tabLayout 不能设置图纹进行轮播
+    implementation project(':tabandmsg')
+
+    //添加权限 解决6.0系统中运行时权限
+    implementation 'com.github.hotchemi:permissionsdispatcher:3.2.0'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:3.2.0'
+
+    //单选按钮
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    implementation project(':mcalendar')
+
+    //WebView 极度容易使用以及功能强大的库，提供了 Android WebView 一系列的问题解决方案 ，并且轻量和极度灵活
+    implementation 'com.just.agentweb:agentweb:4.0.2'
+
+    // (必选)
+    implementation 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    implementation project(':datetimepicker')
+}
+configurations.all {
+    //循环一个个的依赖库
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        //获取当前循环到的依赖库
+        def requested = details.requested
+        //如果这个依赖库群组的名字是com.android.support
+        if (requested.group == 'com.android.support') {
+            //且其名字不是以multidex开头的
+            if (!requested.name.startsWith("multidex")) {
+                //这里指定需要统一的依赖版本
+                details.useVersion '27.1.1'
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mTitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="通知--今天（1/23）下午有重要客户去参观生产车间，请所有部门积极配合，做好相应准备，做好保密工作。" />
+
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                tools:text="10-26 中午12:12" />
+
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:padding="@dimen/_10dp"
+                android:background="@drawable/shape_white_padding_10_radius_5"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:text="[国安居]尊敬的贵宾:国安居南山店双11嗨购节邀您参加，双11提前享，大牌折扣不用等，抢11.11万红包!地址南山桂庙路原岁宝百货" />
+
+            <TextView
+                android:id="@+id/tv_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="4条评论"
+                android:textSize="14sp"
+                android:textColor="@color/blue" />
+
+            <com.example.lxx.myalipay.widget.BaseRecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/im_distribute_comm_bg" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

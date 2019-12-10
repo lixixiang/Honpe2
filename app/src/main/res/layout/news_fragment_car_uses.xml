@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_2dp"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+   <include layout="@layout/include_car_info"/>
+
+    <com.example.lxx.myalipay.widget.BaseListView
+        android:id="@+id/child_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/white"
+        android:dividerHeight="@dimen/_2dp" />
+
+</LinearLayout>

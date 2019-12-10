@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:padding="@dimen/_10dp">
+
+    <com.example.lxx.myalipay.widget.font.FontTextView5
+        android:id="@+id/tv_font1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="&#xe6b6;"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:id="@+id/ll_selector_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/tv_font2"
+        android:layout_toEndOf="@+id/tv_font1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_date"
+            tools:text="一月 2019"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_week"
+            tools:text="周四"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+    <com.example.lxx.myalipay.widget.font.FontTextView5
+        android:id="@+id/tv_font2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="&#xe6b7;"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
+

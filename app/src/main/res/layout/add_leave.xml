@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background2"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_mudidi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_20dp"
+                android:paddingEnd="@dimen/_20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:text="@string/apply_mudidi"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_mudidi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_20dp"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/_20dp"
+                        android:gravity="end|center_vertical"
+                        android:hint="请选择"
+                        android:layout_toStartOf="@+id/iv_delete_mudidi"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/shape_black"
+                        android:textSize="16sp" />
+                    <ImageView
+                        android:id="@+id/iv_delete_mudidi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="end|center_vertical"
+                        android:src="@mipmap/ic_right_grey" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48dp"
+                android:layout_marginTop="@dimen/_2dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_20dp"
+                android:paddingEnd="@dimen/_20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:text="请假类型:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_20dp"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/_20dp"
+                        android:gravity="end|center_vertical"
+                        android:hint="请选择"
+                        android:layout_toStartOf="@+id/iv_delete_type"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/shape_black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_delete_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="end|center_vertical"
+                        android:src="@mipmap/ic_right_grey" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48dp"
+                android:layout_marginTop="@dimen/_2dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_20dp"
+                android:paddingEnd="@dimen/_20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:text="开始时间:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_startTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_20dp"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/_20dp"
+                        android:gravity="end|center_vertical"
+                        android:hint="请选择"
+                        android:layout_toStartOf="@+id/iv_delete_start"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/shape_black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_delete_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="end|center_vertical"
+                        android:src="@mipmap/ic_right_grey" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48dp"
+                android:layout_marginTop="@dimen/_2dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_20dp"
+                android:paddingEnd="@dimen/_20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:text="结束时间:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_endTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_20dp"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/_20dp"
+                        android:gravity="end|center_vertical"
+                        android:hint="请选择"
+                        android:layout_toStartOf="@+id/iv_delete_end"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/shape_black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_delete_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="end|center_vertical"
+                        android:src="@mipmap/ic_right_grey" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48dp"
+                android:layout_marginTop="@dimen/_2dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_20dp"
+                android:paddingEnd="@dimen/_20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:text="时长(H):"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/tv_auto_hour"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_20dp"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/_20dp"
+                        android:gravity="end|center_vertical"
+                        android:hint="请输入小时数"
+                        android:inputType="number"
+                        android:layout_toStartOf="@+id/iv_delete_auto_hour"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/shape_black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_delete_auto_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="end|center_vertical"
+                        android:visibility="gone"
+                        android:src="@mipmap/ic_right_grey" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请假原因"
+                    android:padding="@dimen/_10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <!--  <item name="android:singleLine">false</item>
+        <item name="android:scrollHorizontally">false</item>-->
+
+                <EditText
+                    android:id="@+id/et_case"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="left|top"
+                    android:hint="请输入"
+                    android:padding="@dimen/_15dp"
+                    android:inputType="textMultiLine"
+                    android:maxHeight="@dimen/_200dp"
+                    android:minHeight="@dimen/_48dp"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:textColorHint="@color/feedback_et_hint"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <include layout="@layout/btn_change_state" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 28
+//Generate Signed APK: Errors while building APK. You can find the errors in
+//the ‘Messages’ view. 打包不成功加上这句
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    defaultConfig {
+        applicationId "com.example.lxx.myalipay"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 116
+        versionName "1.1.6"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        renderscriptSupportModeEnabled true    // Enable RS support
+        multiDexEnabled true
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+            proguardFiles 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        jumboMode = true
+    }
+    productFlavors {
+
+    }
+    buildToolsVersion '28.0.3'
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    lintOptions {
+        abortOnError false
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation project(':mcalendar')
+    implementation project(':zbarlibary')
+
+    //解决api 低的问题
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //屏幕适配
+    implementation 'me.jessyan:autosize:1.1.2'
+
+    //单Activity框架
+    implementation 'me.yokeyword:fragmentation:1.3.6'
+    implementation 'me.yokeyword:fragmentation-swipeback:1.3.6'
+
+    //butterknife 黄油刀
+    implementation 'com.jakewharton:butterknife:9.0.0-rc1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
+
+    //recycleView 帮助类框架
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
+
+    //解析类
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //图片加载类
+    implementation 'com.github.bumptech.glide:glide:4.0.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+
+    //发送消息，用于解偶
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //沉浸式状态栏
+    implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    //design 样式
+    implementation 'com.android.support:design:28.0.0'
+
+    //Log
+    implementation 'com.orhanobut:logger:2.1.1+'
+
+    //新的网络请求
+    implementation 'com.zhouyou:rxeasyhttp:2.1.2'
+
+    //连接脚本
+    implementation 'org.jsoup:jsoup:1.11.3'
+
+    //1.1.0 API改动过大，老用户升级需谨慎
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+
+    //进度条
+    implementation 'com.kaopiz:kprogresshud:1.0.1'
+
+    //WebView 极度容易使用以及功能强大的库，提供了 Android WebView 一系列的问题解决方案 ，并且轻量和极度灵活
+    implementation 'com.just.agentweb:agentweb:4.0.2'
+
+    //网页刷新用
+    implementation 'com.lcodecorex:tkrefreshlayout:1.0.7'
+
+    //放大缩小
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+
+    //对话框
+    implementation 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+
+    //数字进度条
+    implementation 'com.daimajia.numberprogressbar:library:1.4@aar'
+
+    //权限判断
+    implementation 'pub.devrel:easypermissions:2.0.0'
+
+    //圆形图片
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+
+    //剪切图片
+    implementation 'com.soundcloud.android:android-crop:1.0.1@aar'
+
+    //车牌键盘
+    implementation 'com.parkingwang:keyboard:0.7.3'
+
+    //底部弹框
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+
+    //角标
+    implementation 'com.github.shts:TriangleLabelView:1.1.2'
+
+    //视频
+    implementation 'com.shuyu:GSYVideoPlayer:6.0.3'
+
+    //3D地图so及jar
+    implementation 'com.amap.api:3dmap:6.8.0'
+    implementation 'com.amap.api:location:4.6.0'
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '28.0.0'
+            }
+        }
+    }
+}

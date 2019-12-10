@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_text">
+        <item>Login</item>
+        <item>Quotation</item>
+        <item>About</item>
+        <item>Service</item>
+        <item>Join Us</item>
+    </string-array>
+
+
+    <!--"\ue638", "\ue616", "\ue61d", "\ue62e", "\ue636"-->
+    <string-array name="home_font_icon" >
+        <item>\ue638</item>
+        <item>\ue616</item>
+        <item>\ue61d</item>
+        <item>\ue631</item>
+        <item>\ue636</item>
+    </string-array>
+
+    <string-array name="news" >
+        <item>company news</item>
+        <item>trade news</item>
+        <item>Honpe video</item>
+    </string-array>
+    <string-array name="scan">
+        <item>QR code</item>
+        <item>Bar code</item>
+    </string-array>
+
+    <string-array name="me_icon_list">
+        <item>\ue645</item>
+        <item>\ue618</item>
+        <item>\ue501</item>
+        <item>\ue60e</item>
+        <item>\ue7c5</item>
+    </string-array>
+
+    <string-array name="me_text_list">
+        <item>设置</item>
+        <item>收货地址</item>
+        <item>二维码</item>
+        <item>帮助中心</item>
+        <item>隐私政策</item>
+    </string-array>
+
+    <string-array name="chinese_week_string_array">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+
+    <!--二维码扫描-->
+    <declare-styleable name="qr_ViewfinderView">
+        <attr name="qr_angleColor" format="color"/>
+        <attr name="qr_hint" format="string"/>
+        <attr name="qr_textHintColor" format="color"/>
+        <attr name="qr_errorHint" format="string"/>
+        <attr name="qr_textErrorHintColor" format="color"/>
+        <attr name="qr_offsetX" format="integer"/>
+        <attr name="qr_offsetY" format="integer"/>
+        <attr name="qr_showPossiblePoint" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/_15dp"
+    android:layout_marginRight="@dimen/_15dp"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_date_year_month_day"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="@dimen/_10dp"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingBottom="@dimen/_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="来访日期"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_date_year_month_day_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.example.lxx.myalipay.widget.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&#xe61b;"
+                    android:paddingRight="@dimen/_5dp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/tv_date_year_month_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="99年5月5日"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/list_bottom"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginBottom="@dimen/_20dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_date_time_minute"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="@dimen/_10dp"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingBottom="@dimen/_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预计到访时间"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.example.lxx.myalipay.widget.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&#xe763;"
+                    android:paddingRight="@dimen/_5dp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/tv_date_time_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    tools:text="00:00-24:00"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_e"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <include layout="@layout/include_check_month_day" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background_e"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal">
+
+        <com.example.lxx.myalipay.widget.font.FontTextView4
+            android:id="@+id/tv_font_date"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_1dp"
+            android:background="@color/grey_table2"
+            android:gravity="center"
+            android:text="日期"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_1dp"
+            android:layout_weight="1">
+
+            <com.example.lxx.myalipay.widget.font.FontTextView4
+                android:id="@+id/tv_startTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_1dp"
+                android:background="@color/grey_table2"
+                android:gravity="center"
+                android:text="开始"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_1dp"
+            android:layout_weight="1">
+
+            <com.example.lxx.myalipay.widget.font.FontTextView4
+                android:id="@+id/tv_overTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_1dp"
+                android:background="@color/grey_table2"
+                android:gravity="center"
+                android:text="结束"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_1dp"
+            android:layout_weight="2">
+
+            <com.example.lxx.myalipay.widget.font.FontTextView4
+                android:id="@+id/tv_reason"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_1dp"
+                android:background="@color/grey_table2"
+                android:gravity="center"
+                android:text="事由"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_1dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_weight="1">
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

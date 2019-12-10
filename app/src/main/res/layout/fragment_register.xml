@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_progress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background2"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/scr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_20dp"
+            android:paddingRight="@dimen/_20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="用户帐号"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toStartOf="@+id/icon_font_delete1"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="sans-serif"
+                        android:hint="帐号"
+                        android:padding="1px"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/white_a5"
+                        android:textCursorDrawable="@drawable/shape_black"
+                        android:textSize="16sp" />
+
+
+                    <com.example.lxx.myalipay.widget.font.FontTextView
+                        android:id="@+id/icon_font_delete1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_8dp"
+                        android:gravity="center_vertical"
+                        android:text="&#xe78c;"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/white_a5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="昵称"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/view1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toStartOf="@+id/icon_font_delete2"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="sans-serif"
+                        android:hint="输入昵称"
+                        android:padding="1px"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/white_a5"
+                        android:textCursorDrawable="@drawable/shape_black"
+                        android:textSize="16sp" />
+
+                    <com.example.lxx.myalipay.widget.font.FontTextView
+                        android:id="@+id/icon_font_delete2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_8dp"
+                        android:gravity="center_vertical"
+                        android:text="&#xe78c;"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/white_a5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="设置密码"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/view1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <EditText
+                        android:id="@+id/et_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toStartOf="@+id/icon_font_delete3"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="sans-serif"
+                        android:inputType="textPassword"
+                        android:hint="输入密码"
+                        android:padding="1px"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/white_a5"
+                        android:textCursorDrawable="@drawable/shape_black"
+                        android:textSize="16sp" />
+
+                    <com.example.lxx.myalipay.widget.font.FontTextView
+                        android:id="@+id/icon_font_delete3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_8dp"
+                        android:gravity="center_vertical"
+                        android:text="&#xe78c;"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/white_a5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="确认密码"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/view1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+                    <EditText
+                        android:id="@+id/et_passagain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toStartOf="@+id/icon_font_delete4"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPassword"
+                        android:fontFamily="sans-serif"
+                        android:hint="重新输入密码"
+                        android:padding="1px"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/white_a5"
+                        android:textCursorDrawable="@drawable/shape_black"
+                        android:textSize="16sp" />
+
+                    <com.example.lxx.myalipay.widget.font.FontTextView
+                        android:id="@+id/icon_font_delete4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_8dp"
+                        android:gravity="center_vertical"
+                        android:text="&#xe78c;"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/white_a5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="手机号"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/view1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toStartOf="@+id/icon_font_delete5"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="sans-serif"
+                        android:hint="输入手机号码"
+                        android:padding="1px"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/white_a5"
+                        android:textCursorDrawable="@drawable/shape_black"
+                        android:textSize="16sp" />
+
+                    <com.example.lxx.myalipay.widget.font.FontTextView
+                        android:id="@+id/icon_font_delete5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_8dp"
+                        android:gravity="center_vertical"
+                        android:text="&#xe78c;"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/white_a5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="邮箱"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/view1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <EditText
+                        android:id="@+id/et_youxian"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toStartOf="@+id/icon_font_delete6"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="sans-serif"
+                        android:hint="输入邮箱"
+                        android:padding="1px"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/white_a5"
+                        android:textCursorDrawable="@drawable/shape_black"
+                        android:textSize="16sp" />
+
+                    <com.example.lxx.myalipay.widget.font.FontTextView
+                        android:id="@+id/icon_font_delete6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_8dp"
+                        android:gravity="center_vertical"
+                        android:text="&#xe78c;"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/white_a5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="单位名称"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/view2"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <EditText
+                        android:id="@+id/et_comply"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toStartOf="@+id/icon_font_delete7"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="sans-serif"
+                        android:hint="来访事由(必填）"
+                        android:padding="1px"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/white_a5"
+                        android:textCursorDrawable="@drawable/shape_black"
+                        android:textSize="16sp" />
+
+
+                    <com.example.lxx.myalipay.widget.font.FontTextView
+                        android:id="@+id/icon_font_delete7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_8dp"
+                        android:gravity="center_vertical"
+                        android:text="&#xe78c;"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white_a5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="所在区域"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+                    <EditText
+                        android:id="@+id/et_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toStartOf="@+id/icon_font_delete8"
+                        android:background="@android:color/transparent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif"
+                        android:hint="输入所在哪个城市"
+                        android:padding="@dimen/_1dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/white_a5"
+                        android:textCursorDrawable="@drawable/shape_black"
+                        android:textSize="16sp" />
+
+
+                    <com.example.lxx.myalipay.widget.font.FontTextView
+                        android:id="@+id/icon_font_delete8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_8dp"
+                        android:gravity="center_vertical"
+                        android:text="&#xe78c;"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white_a5" />
+
+            </LinearLayout>
+
+            <include layout="@layout/register_conection" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

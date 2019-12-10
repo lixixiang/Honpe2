@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_gride"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_5dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.lxx.myalipay.widget.font.FontTextView
+            android:id="@+id/font_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="倒马入库"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp" />
+
+        <!--提示-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_msg_tips"-->
+        <!--android:layout_toRightOf="@+id/font_icon"-->
+        <!--android:layout_width="@dimen/_5dp"-->
+        <!--android:layout_height="@dimen/_5dp"-->
+        <!--tools:text="倒马入库"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:background="@drawable/shape_circle_oval_red"-->
+        <!--android:textColor="@color/white" />-->
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_5dp"
+        tools:text="全部订单"
+        android:textColor="@color/black2"
+        android:textSize="14sp" />
+
+</LinearLayout>

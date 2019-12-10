@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomBar"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50dp"
+    android:background="@color/white"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_car_search"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black2"
+            android:text="查询"
+            android:gravity="center"/>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="@dimen/_05dp"
+            android:layout_height="match_parent"
+            android:background="@color/list_bottom" />
+
+        <TextView
+            android:id="@+id/tv_car_modification"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black2"
+            android:text="修改"
+            android:gravity="center"/>
+
+        <!--<View-->
+            <!--android:id="@+id/v2"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="@dimen/_0.5dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/white_a5" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/send_car"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="@dimen/_0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="@dimen/_14sp"-->
+            <!--android:textColor="@color/black2"-->
+            <!--android:text="派车"-->
+            <!--android:gravity="center"/>-->
+
+        <!--<View-->
+            <!--android:id="@+id/v3"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="@dimen/_0.5dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/white_a5" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/out_car"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="@dimen/_0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="@dimen/_14sp"-->
+            <!--android:textColor="@color/black2"-->
+            <!--android:text="出车"-->
+            <!--android:gravity="center"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="@dimen/_0.5dp"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/white_a5"/>-->
+
+</LinearLayout>

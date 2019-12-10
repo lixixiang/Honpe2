@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp">
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_fang"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-5px"
+            android:background="@drawable/shape_rectangle_grey_5_lr15_tb5"
+            android:gravity="center"
+            android:text="待审核"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_qi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.example.lxx.myalipay.widget.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/orange"
+                    android:textSize="20sp"
+                    android:text="&#xe7c5;"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="公司"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_out_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/google_green"
+                tools:text="13:50" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/ll_fang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ll_qi"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginStart="@dimen/_10dp"
+                    tools:text="CL1818464" />
+
+                <TextView
+                    android:id="@+id/tv_user_car_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:textSize="14sp"
+                    android:layout_marginStart="@dimen/_10dp"
+                    tools:text="11-10 13:38"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/line2"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_zhong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_toEndOf="@+id/ll_fang"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.example.lxx.myalipay.widget.font.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp"
+                    android:text="&#xe7c6;"/>
+
+                <TextView
+                    android:id="@+id/tv_destination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="电子城电子城电子城电子城电子城电子城"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_back_factory_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/google_green"
+                    tools:text="13:50" />
+
+                <com.example.lxx.myalipay.widget.font.FontTextView4
+                    android:id="@+id/font_icon_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&#xe608;"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    android:textColor="@color/blue_dark"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14sp"
+            android:layout_toStartOf="@+id/tv_status"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ll_qi">
+
+            <TextView
+                android:id="@+id/tv_depart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5dp"
+                android:text="工程部:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_applyPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="郑生明"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14sp"
+                android:layout_marginEnd="@dimen/_5dp"
+                android:text="事由:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_orderCause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="14sp"
+                tools:text="外出办事外出办事外出办事外出办事外出办事外出办事" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5dp"
+        android:background="@color/background_e" />
+
+
+</LinearLayout>

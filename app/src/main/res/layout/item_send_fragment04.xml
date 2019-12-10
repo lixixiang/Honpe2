@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/_10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_30dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/headerIcon"
+            android:layout_width="@dimen/_45dp"
+            android:layout_height="@dimen/_45dp"
+            android:src="@mipmap/ic_normal_bg"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_name_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/headerIcon"
+            android:layout_toStartOf="@+id/ll_right">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="用户名"/>
+
+            <com.example.lxx.myalipay.widget.BaseListView
+                android:id="@+id/list_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                tools:listitem="@layout/css_title_small_depart"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="@dimen/_50dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_bottom"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

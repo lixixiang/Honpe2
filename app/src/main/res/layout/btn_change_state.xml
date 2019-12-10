@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/apply_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_20dp"
+    android:layout_marginLeft="@dimen/_15dp"
+    android:layout_marginRight="@dimen/_15dp"
+    android:layout_marginBottom="@dimen/_100dp"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/apply_normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:background="@drawable/shape_white_grey_r5_s2"
+        android:text="提交"
+        android:textSize="16sp"
+        android:textColor="@color/grey" />
+
+    <Button
+        android:id="@+id/apply_succeed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:background="@drawable/shape_blue_radius5"
+        android:shadowDx="0.0"
+        android:shadowDy="-1.0"
+        android:shadowRadius="0.2"
+        android:text="提交"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:shadowColor="@color/gray"
+        android:textColor="@color/white" />
+</RelativeLayout>

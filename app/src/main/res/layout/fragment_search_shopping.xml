@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/background_e"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_custom_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_check_month_day" />
+
+            <!--<include layout="@layout/include_date_top" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginBottom="@dimen/_1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_Year_Month"
+                        android:layout_width="@dimen/_200dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="match_parent"
+                        android:text="午餐"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:background="@color/google_green"
+                        android:layout_weight="3"/>
+                    <TextView
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="match_parent"
+                        android:text="晚餐"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:background="@color/google_red"
+                        android:layout_weight="3"/>
+
+                </LinearLayout>
+                <include layout="@layout/item_title_table" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ExpandableListView
+                android:id="@+id/elv_collocation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eeeff3"
+                android:divider="#eeeff3"
+                android:visibility="gone"
+                android:dividerHeight="0dp"
+                android:groupIndicator="@null"
+                android:listSelector="@null" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--<include layout="@layout/include_inner_bottom" />-->
+</LinearLayout>

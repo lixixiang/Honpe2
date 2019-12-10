@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lxx.myalipay">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 振动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 访问闪光灯,android开发网提示HTC Dream不包含闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- RxDialog 设置权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@mipmap/ic_honpe"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <service android:name="com.amap.api.location.APSService" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="cef36e075ff80a38bcfa1d56d1f0b1c0" />
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".ui.welcome.GuideActivity" />
+        <activity android:name=".ui.welcome.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path"
+                tools:replace="android:resource" />
+        </provider>
+
+        <activity android:name=".ui.staff.apply.ApplyActivity"/>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity android:name=".ui.fragment.a_package.ui.appoint.detail.AppointDetailActivity" />
+        <activity android:name=".ui.staff.viewpager_fragment.DetailMsgActivity" />
+        <activity android:name=".ui.staff.apply.ui.fragment1.send_car_list.SendCarListActivity" />
+        <activity android:name=".ui.staff.apply.ui.fragment1.add_order.CarModificationActivity" />
+        <activity android:name=".ui.staff.apply.ui.fragment1.detail.DetailListActivity" />
+        <activity android:name=".ui.staff.apply.ui.fragment1.map.ShowAllMapActivity" />
+        <activity android:name=".ui.staff.apply.ui.fragment1.map.ShowAllMapProgressActivity" />
+        <activity android:name=".ui.staff.apply.ui.fragment1.add_order.AddSendCarApplyActivity" />
+        <activity android:name=".ui.staff.apply.ui.fragment2.add_order.AddShoppingApplyActivity" />
+        <activity android:name=".ui.staff.apply.ui.fragment3.add_order.AddRepairListActivity" />
+        <activity android:name=".ui.staff.apply.ui.fragment3.add_order.RepairApplyActivity" />
+        <activity android:name=".ui.staff.apply.ui.fragment4.add_order.ApplyOrderActivity" />
+        <activity android:name=".ui.staff.query.ui.position7.add.AddStayFragment" />
+        <activity android:name=".ui.staff.approve.ApproveMainActivity" />
+        <activity android:name=".ui.staff.query.ui.position16.EmployeeWithOrderActivity" />
+        <activity android:name=".ui.view.MultiSelectCalendarView2" />
+    </application>
+
+</manifest>

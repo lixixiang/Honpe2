@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/_1dp"
+    android:orientation="horizontal">
+
+    <com.example.lxx.myalipay.widget.font.FontTextView4
+        android:id="@+id/tv_date"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.example.lxx.myalipay.widget.font.FontTextView4
+            android:id="@+id/tv_morning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_1dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/grey_home"
+            android:textSize="14sp" />
+
+        <jp.shts.android.library.TriangleLabelView
+            android:id="@+id/lab_morning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:backgroundColor="@color/grey_home"
+            app:corner="rightBottom"
+            android:visibility="gone"
+            app:primaryText="下标"
+            app:primaryTextColor="@color/white"
+            app:primaryTextSize="8sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.example.lxx.myalipay.widget.font.FontTextView4
+            android:id="@+id/tv_after"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_1dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/grey_home"
+            android:textSize="14sp" />
+
+        <jp.shts.android.library.TriangleLabelView
+            android:id="@+id/lab_after"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:backgroundColor="@color/grey_home"
+            app:corner="rightBottom"
+            android:visibility="gone"
+            app:primaryText="下标"
+            app:primaryTextColor="@color/white"
+            app:primaryTextSize="8sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.example.lxx.myalipay.widget.font.FontTextView4
+            android:id="@+id/tv_dinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_1dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/grey_home"
+            android:textSize="14sp" />
+
+        <jp.shts.android.library.TriangleLabelView
+            android:id="@+id/lab_dinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:backgroundColor="@color/grey_home"
+            app:corner="rightBottom"
+            android:visibility="gone"
+            app:primaryText="下标"
+            app:primaryTextColor="@color/white"
+            app:primaryTextSize="8sp" />
+
+    </RelativeLayout>
+
+
+    <com.example.lxx.myalipay.widget.font.FontTextView4
+        android:id="@+id/tv_status"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_1dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="&#xe636;"
+        android:textColor="@color/grey_home"
+        android:textSize="20sp" />
+</LinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background2">
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14sp"
+            android:textSize="14sp"
+            android:text="@string/txt_change_purchase" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="删除"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:layout_marginEnd="14sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_20dp"
+        android:paddingEnd="@dimen/_20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5dp"
+            android:text="名称"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.example.lxx.myalipay.widget.edit.CursorEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="end|center_vertical"
+            android:hint="请输入"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/shape_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:layout_marginTop="@dimen/_2dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_20dp"
+        android:paddingEnd="@dimen/_20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5dp"
+            android:text="规格"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.example.lxx.myalipay.widget.edit.CursorEditText
+            android:id="@+id/size"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="end|center_vertical"
+            android:hint="请输入"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/shape_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:layout_marginTop="@dimen/_2dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_20dp"
+        android:paddingEnd="@dimen/_20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5dp"
+            android:text="数量"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.example.lxx.myalipay.widget.edit.CursorEditText
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="end|center_vertical"
+            android:hint="请输入"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/shape_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:layout_marginTop="@dimen/_2dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_20dp"
+        android:paddingEnd="@dimen/_20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5dp"
+            android:text="单位"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.example.lxx.myalipay.widget.edit.CursorEditText
+            android:id="@+id/unit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="end|center_vertical"
+            android:hint="请输入"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/shape_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:layout_marginTop="@dimen/_2dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_20dp"
+        android:paddingEnd="@dimen/_20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5dp"
+            android:text="价格"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.example.lxx.myalipay.widget.edit.CursorEditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="end|center_vertical"
+            android:hint="请输入"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/shape_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginStart="@dimen/_35dp"
+            android:text="@string/txt_purchase_tips" />
+    </LinearLayout>
+
+
+</LinearLayout>

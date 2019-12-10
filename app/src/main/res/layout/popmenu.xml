@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_view_cont"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape_white_padding_10_radius_5"
+    >
+    <!--android:scrollbars="none"消除右侧的滚动条-->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:divider="@color/divider_line"
+        android:scrollbars="none"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:footerDividersEnabled="true" />
+
+
+</LinearLayout>

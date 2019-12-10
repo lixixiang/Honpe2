@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/shape_rectangle_white_gray">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_1dp"
+            android:layout_marginTop="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rectangle_table_white_padding_3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_1dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/shape_rectangle_table_white_padding_3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="星期"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rectangle_table_white_padding_3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ck_breakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableEnd="@drawable/checkbox_selector"
+                android:text="早餐"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rectangle_table_white_padding_3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/ck_lunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="中餐"
+                android:drawableEnd="@drawable/checkbox_selector"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rectangle_table_white_padding_3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/ck_after"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="晚餐"
+                android:drawableEnd="@drawable/checkbox_selector"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rectangle_table_white_padding_3"
+            android:gravity="center"
+            android:clickable="false"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/ck_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="夜宵"
+                android:drawableEnd="@drawable/checkbox_selector" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rectangle_table_white_padding_3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/ck_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="全选"
+                android:drawableEnd="@drawable/checkbox_selector" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/recyclerView"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_appointment_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/_5dp"
+    android:orientation="vertical">
+
+    <include layout="@layout/css_title_small_depart"/>
+
+    <include layout="@layout/css_base_listview" />
+</LinearLayout>

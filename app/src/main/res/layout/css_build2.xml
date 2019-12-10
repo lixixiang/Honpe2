@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_room_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_5dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_10dp">
+
+    <RelativeLayout
+        android:id="@+id/ll_depart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/re_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <com.example.lxx.myalipay.widget.font.FontTextView5
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&#xe615;"
+                    android:textColor="@color/green"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_room_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:text="201"
+                    android:textColor="@color/list_bottom"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_room_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5dp"
+                    android:text="201"
+                    android:padding="@dimen/_5dp"
+                    android:gravity="center"
+                    android:textColor="@color/list_bottom"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总床位:"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_total_bed_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    android:text="8"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余床位:"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_freeRoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    android:text="2"
+                    android:textColor="@color/red"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_room_orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Honpe</string>
+    <string name="text_home">首页</string>
+    <string name="text_me">我的</string>
+    <string name="company_news">企业新闻</string>
+    <string name="trade_news">行业新闻</string>
+    <string name="scan">扫一扫</string>
+    <string name="order">访客预约</string>
+    <string name="Logistics">物流查询</string>
+    <string name="contact_way">联系方式</string>
+    <string name="news_details">新闻详情</string>
+    <string name="new_version_detected">检测到新版本</string>
+    <string name="find_the_latest_version">发现最新版本</string>
+    <string name="Download_update_or_not">,是否下载更新</string>
+    <string name="permission_external_storage">App需要用到读写权限</string>
+    <string name="style">类形</string>
+    <string name="input_express_no">输入快递单号</string>
+    <string name="search_history">搜索历史</string>
+    <string name="clear_history_record">清除历史记录</string>
+    <string name="search">搜索</string>
+    <string name="The_tracking_number_cannot_be_empty">快递单号不能空噢！</string>
+    <string name="Select_this_image_to_identity">选择要识别的图片</string>
+    <string name="Put_the_qr_code_bar_code_into_this_box_and_it_can_be_scanned_automatically">将二维码/条形码放入框内，即可自动扫描</string>
+    <string name="Search_result">搜索结果</string>
+    <string name="login">登录</string>
+    <string name="login_forget_pwd">忘记密码</string>
+    <string name="register_a_new_user">注册新用户</string>
+    <string name="login_register">登录/注册</string>
+    <string name="More_privileges_after_login">登录后享有更多权限哦~~</string>
+    <string name="rememb">记住密码</string>
+    <string name="sure">确定</string>
+    <string name="hint_feed_back">1、请详细描述您所遇到的问题，以便我们更好的解决您所遇到的问题，例如：在进入到具体某一步出现了什么异常情况。\n  2、请尽可能提供导演提示的截图。\n 3、请留下您有效的邮箱，我们的回复将会以邮件形式回复到您所预留的邮箱中。</string>
+    <string name="feedback_email">QQ邮箱/163邮箱等</string>
+    <string name="feedback_phone_no_hint">11位手机号码</string>
+    <string name="feedback_mast_up_picture">最多上传5张图片</string>
+    <string name="me">我的</string>
+    <string name="apply">申请</string>
+    <string name="txt_change_purchase">采购明细(%1$d)</string>
+    <string name="txt_purchase_tips">如需采购多种产品，请点击\"增加明细\"</string>
+    <string name="apply_mudidi" translatable="false">目&#8194;的&#8194;地:</string>
+    <string name="time_long" translatable="false">时&#8195;&#8195;长:</string>
+    <string name="login_in">登录入口</string>
+    <string name="login_staff">员工入口</string>
+    <string name="login_custom">客户入口</string>
+</resources>

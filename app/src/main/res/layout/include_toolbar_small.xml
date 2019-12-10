@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/re_toolbar_small"
+    android:visibility="gone"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/holo_blue_dark">
+
+    <!--扫一扫-->
+    <ImageView
+        android:id="@+id/iv_scan2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@mipmap/ic_top_01" />
+
+    <!--访客预约50-50-->
+    <ImageView
+        android:id="@+id/iv_appointment2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/iv_scan2"
+        app:srcCompat="@mipmap/ic_top_02" />
+
+    <!--物流查询50-50-->
+    <ImageView
+        android:id="@+id/iv_logistics2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/iv_appointment2"
+        app:srcCompat="@drawable/ic_top_03"
+        tools:ignore="VectorDrawableCompat" />
+
+    <!--&lt;!&ndash;用户登录50-50&ndash;&gt;-->
+    <ImageView
+        android:id="@+id/iv_user_login2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_logistics2"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/ic_top_04"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <ImageView
+        android:id="@+id/iv_plus2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/iv_user_login2"
+        android:src="@mipmap/iv_search" />
+
+    <View
+        android:id="@+id/v_toolbar_small_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+</RelativeLayout>

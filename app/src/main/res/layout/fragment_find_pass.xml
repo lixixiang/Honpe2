@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/toolbar"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/_48dp">
+
+        <LinearLayout
+            android:id="@+id/ll_tab_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="账号"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/tv_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textCursorDrawable="@drawable/shape_black"
+                android:background="@null"
+                android:paddingEnd="@dimen/_10dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:hint="请输入登录帐号"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_success_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="提交申请成功，密码已成功发送到您的邮箱！请注意查收"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/btn_change_state"/>
+
+</LinearLayout>

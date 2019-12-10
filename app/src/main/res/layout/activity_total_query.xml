@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_e"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_check_month_day"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_date"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/grey_table2"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="日期"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/grey_table2"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_1dp"
+            android:gravity="center"
+            android:text="时间1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_1dp"
+            android:gravity="center"
+            android:text="时间2"
+            android:background="@color/grey_table2"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/grey_table2"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_1dp"
+            android:gravity="center"
+            android:text="时间3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/grey_table2"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_1dp"
+            android:gravity="center"
+            android:text="时间4"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/grey_table2"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_1dp"
+            android:gravity="center"
+            android:text="时间5"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/grey_table2"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_1dp"
+            android:gravity="center"
+            android:text="时间6"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

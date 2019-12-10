@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Honpe2.iml" filepath="$PROJECT_DIR$/../Honpe2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../imagepicker/imagepicker.iml" filepath="$PROJECT_DIR$/../imagepicker/imagepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mcalendar.iml" filepath="$PROJECT_DIR$/mcalendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../search_view/search_view.iml" filepath="$PROJECT_DIR$/../search_view/search_view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tabandmsg/tabandmsg.iml" filepath="$PROJECT_DIR$/../tabandmsg/tabandmsg.iml" />
+    </modules>
+  </component>
+</project>

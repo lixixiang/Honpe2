@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_un_login"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="center_vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/selector_men" />
+
+    <LinearLayout
+        android:id="@+id/ll_is_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:visibility="gone"
+        android:layout_toEndOf="@+id/image_head"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_register"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <com.example.lxx.myalipay.widget.font.FontTextView
+            android:id="@+id/tv_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:text="&#xe62e;"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_with_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/image_head"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_register"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/More_privileges_after_login"
+            android:textColor="@color/grey_aeaeae" />
+    </LinearLayout>
+
+</RelativeLayout>

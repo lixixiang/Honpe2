@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/re_none_order"
+    android:background="@color/background2"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="暂无收获地址"/>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:text="您的地址列表暂无收货地址，快去添加一个地址吧"/>
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_below="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_rectangle_white_red_r100dp"
+        android:textSize="16sp"
+        android:textColor="@color/red"
+        android:text="添加收获地址"/>
+
+</RelativeLayout>

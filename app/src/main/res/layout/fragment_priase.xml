@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_good"
+            android:layout_width="@dimen/_80dp"
+            android:layout_height="@dimen/_30dp"
+            android:background="@drawable/btn_blue_checked_change"
+            android:button="@null"
+            android:layout_marginStart="@dimen/_10dp"
+            android:checked="false"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_normal"
+            android:layout_width="@dimen/_80dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_marginStart="@dimen/_10dp"
+            android:background="@drawable/btn_blue_checked_change"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_bad"
+            android:layout_width="@dimen/_80dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_marginStart="@dimen/_10dp"
+            android:background="@drawable/btn_blue_checked_change"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/et_appraise"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/shape_rectangle_white_gray"
+        android:gravity="left|top"
+        android:hint="输入评价..."
+        android:paddingStart="@dimen/_22dp"
+        android:paddingTop="@dimen/_15dp"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论总数"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp"
+            android:text="8"
+            android:textColor="@color/google_red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14sp"
+            android:text="优良率"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_excellence_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="14sp"
+            android:text="763"
+            android:textColor="@color/google_red"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/child_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

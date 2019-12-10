@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_30dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_15dp"
+                    android:paddingRight="@dimen/_15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="时间区间"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_startTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_grey_gray_radiu_10"
+                            android:text="开始时间"
+                            style="@style/TextViewPadding"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_30dp"
+                            android:layout_marginEnd="@dimen/_30dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:text="至" />
+
+                        <TextView
+                            android:id="@+id/tv_endTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            style="@style/TextViewPadding"
+                            android:background="@drawable/shape_grey_gray_radiu_10"
+                            android:text="结束时间"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1dp"
+                        android:layout_marginTop="@dimen/_20dp"
+                        android:background="@color/list_bottom" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20dp"
+                            android:text="司机"
+                            android:layout_centerVertical="true"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.example.lxx.myalipay.utils.tabutils.FlowTagLayout
+                            android:id="@+id/rl_driver_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1dp"
+                        android:layout_marginTop="@dimen/_20dp"
+                        android:background="@color/list_bottom"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20dp"
+                            android:text="车牌号"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+                    </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.example.lxx.myalipay.utils.tabutils.FlowTagLayout
+                            android:id="@+id/rl_car_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1dp"
+                        android:layout_marginTop="@dimen/_20dp"
+                        android:layout_marginBottom="@dimen/_20dp"
+                        android:background="@color/list_bottom" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/btn_buy_input_message"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45dp"
+                android:layout_marginEnd="@dimen/_30dp"
+                android:layout_marginStart="@dimen/_30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_blue_radius10"
+                android:text="查询"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_30dp"
+            app:srcCompat="@drawable/ic_delete_black_24dp" />
+    </RelativeLayout>
+</LinearLayout>

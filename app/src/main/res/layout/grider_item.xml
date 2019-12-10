@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_gride"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/grid_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:visibility="gone" />
+
+    <com.example.lxx.myalipay.widget.font.FontTextView
+        android:id="@+id/tv_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/text_lunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        tools:text="小机器人" />
+</LinearLayout>

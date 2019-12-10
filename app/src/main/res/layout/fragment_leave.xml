@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_e"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <include layout="@layout/include_check_month_day" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/_1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/grey_table2"
+            android:gravity="center"
+            android:text="日期"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/sub1"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="上午"
+            android:background="@color/grey_table2"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_1dp"
+            android:gravity="center"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/sub2"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/grey_table2"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_1dp"
+            android:gravity="center"
+            android:text="下午"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/sub3"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/grey_table2"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_1dp"
+            android:gravity="center"
+            android:text="晚上"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/sub4"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/grey_table2"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_1dp"
+            android:gravity="center"
+            android:text="审批"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+</LinearLayout>

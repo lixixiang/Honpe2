@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_5dp">
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_10dp"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        tools:text="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:layout_toStartOf="@+id/tv_status"
+        android:layout_toEndOf="@+id/tv_id"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="事由:"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_Reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:layout_marginStart="@dimen/_10dp"
+                android:textSize="14sp"
+                tools:text="测试" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间:"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_time_bound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                android:layout_marginStart="@dimen/_10dp"
+                tools:text="2019-04-11 08:00-09:00" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/css_text_status" />
+
+</RelativeLayout>

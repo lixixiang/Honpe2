@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_top_css"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue_dark"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_big2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/v_title_big_mask"/>
+
+    <com.example.lxx.myalipay.widget.BaseGridView
+        android:id="@+id/gridView_1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:scaleType="centerCrop"
+        android:verticalSpacing="10dp"
+        android:paddingTop="10dp"
+        android:background="@android:color/white"
+        android:paddingBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/home_log"/>
+
+</LinearLayout>

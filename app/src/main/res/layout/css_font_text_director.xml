@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/selector_white_grey"
+    android:layout_marginBottom="1dp"
+    android:orientation="horizontal">
+
+    <com.example.lxx.myalipay.widget.font.FontTextView
+        android:id="@+id/font_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/tv_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/font_icon"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:text="sssssss"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv_director"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

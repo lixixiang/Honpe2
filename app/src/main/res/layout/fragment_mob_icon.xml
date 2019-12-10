@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_circle"
+        android:layout_width="@dimen/_100dp"
+        android:layout_height="@dimen/_100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20dp"
+        android:text="上传头像"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.example.lxx.myalipay.widget.font.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20dp"
+            android:text="&#xe64d;"
+            android:textColor="@color/google_coffee"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="dddd" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/background_e" />
+
+    <include layout="@layout/css_btn_sure" />
+
+
+</LinearLayout>

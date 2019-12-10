@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Honpe</string>
+    <string name="text_home">home</string>
+    <string name="text_me">me</string>
+    <string name="company_news">company news</string>
+    <string name="trade_news">trade news</string>
+    <string name="scan">Scan</string>
+    <string name="order">Order</string>
+    <string name="Logistics">Logistics</string>
+    <string name="contact_way">Way</string>
+    <string name="news_details">News Details</string>
+    <string name="new_version_detected">New Version Detected</string>
+    <string name="find_the_latest_version">Find the latest version</string>
+    <string name="Download_update_or_not">,Download update or not</string>
+    <string name="permission_external_storage">permission external storage</string>
+    <string name="style">Style</string>
+    <string name="input_express_no">input express no</string>
+    <string name="search_history">search history</string>
+    <string name="clear_history_record">clear history record</string>
+    <string name="search">search</string>
+    <string name="The_tracking_number_cannot_be_empty">The tracking number cannot be empty!</string>
+    <string name="Select_this_image_to_identity">Select this image to identity</string>
+    <string name="Put_the_qr_code_bar_code_into_this_box_and_it_can_be_scanned_automatically">Put the qr code bar code into this box and it can be scanned automatically</string>
+    <string name="Search_result">Search result</string>
+    <string name="login">Login</string>
+    <string name="login_forget_pwd">login forget pwd</string>
+    <string name="register_a_new_user">register a new user</string>
+    <string name="login_register">Login/Register</string>
+    <string name="More_privileges_after_login">More privileges after login~~</string>
+    <string name="rememb">Keep Password</string>
+    <string name="sure">Sure</string>
+    <string name="hint_feed_back">1、请详细描述您所遇到的问题，以便我们更好的解决您所遇到的问题，例如：在进入到具体某一步出现了什么异常情况。\n  2、请尽可能提供导演提示的截图。\n 3、请留下您有效的邮箱，我们的回复将会以邮件形式回复到您所预留的邮箱中。</string>
+    <string name="feedback_email">QQ邮箱/163邮箱等</string>
+    <string name="feedback_phone_no_hint">11位手机号码</string>
+    <string name="feedback_mast_up_picture">最多上传5张图片</string>
+    <string name="me">Me</string>
+    <string name="apply">Apply</string>
+    <string name="txt_change_purchase">采购明细(%1$d)</string>
+    <string name="txt_purchase_tips">如需采购多种产品，请点击\"增加明细\"</string>
+    <string name="apply_mudidi" translatable="false">目&#8194;的&#8194;地:</string>
+    <string name="time_long" translatable="false">时&#8195;&#8195;长:</string>
+    <string name="login_in">Login in</string>
+    <string name="login_staff">staff Login</string>
+    <string name="login_custom">custom Login</string>
+</resources>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="维修项目"
+                android:textColor="@color/black2"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_item"
+                android:layout_toEndOf="@+id/sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="(灯具电路)"
+                android:textSize="12sp"
+                android:textColor="@color/white_a5" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/sub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="位置:"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_point"
+                android:layout_toEndOf="@+id/sub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10dp"
+                android:text="A栋一楼，第二排"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/sub2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="要求时限(小时):"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_hours"
+                android:layout_toEndOf="@+id/sub2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10dp"
+                android:text="24h"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="紧急维修"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="@color/orange"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/sub3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成时间:"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_finish_time"
+                android:layout_toEndOf="@+id/sub3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10dp"
+                android:text="2018-11-14 14:20"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/sub4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="维修人:"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_userName"
+                android:layout_toEndOf="@+id/sub4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10dp"
+                android:text="李鹏"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/sub5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请部门确认:"
+                android:layout_centerVertical="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_apply_depart_confirm"
+                android:layout_toEndOf="@+id/sub5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10dp"
+                android:textColor="@color/green"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/sub6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报修原因:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_cause"
+                android:layout_toEndOf="@+id/sub6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10dp"
+                android:text="更换线路，维修老化电线"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/sub7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电工鉴定:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_checked"
+                android:layout_toEndOf="@+id/sub7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10dp"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/sub8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="鉴定结果:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_toEndOf="@+id/sub8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10dp"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/apply_succeed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:background="@drawable/shape_blue_radius5"
+            android:shadowDx="0.0"
+            android:shadowDy="-1.0"
+            android:shadowRadius="0.2"
+            android:text="提交"
+            android:textSize="16sp"
+            android:shadowColor="@color/list_bottom"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5dp"
+        android:background="@color/background2"/>
+
+</LinearLayout>
